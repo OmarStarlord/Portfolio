@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Omar's Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz4fnFO9gybBud7mqnr6XC/uy2eXh6zHl8GkblzD0dW2y3cG2E7Fg6XIKZF" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/6en8XCp+HHAAK5GSLf2xlYtvJ8U2Q4U+9cuEnJoa3" crossorigin="anonymous"></script>
+      
+        <script>
+            function validateForm() {
+            var firstName = document.getElementById("firstname").value;
+            var lastName = document.getElementById("lastname").value;
+            var email = document.getElementById("email").value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (firstName === "") {
+    alert("Please enter your first name");
+    return false;
+  }
+
+  if (lastName === "") {
+    alert("Please enter your last name");
+    return false;
+  }
+
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address");
+    return false;
+  }
+  
+  return true;
+
+  
+}
+
+
+        </script>
+    </head>
+   
+
+<body>
+    <div class="top-bar">
+        <a class="logo">My Website</a>
+        <ul>
+          <li><a href="#About_me">About me</a></li>
+          <li><a href="#services">Skills</a></li>
+          <li><a href="#Contact_me">Contact me</a></li>
+          <li><a href="Quiz.html">Quiz about me</a></li>
+          <li><a href="Login.html">LogOut</a></li>
+          
+        </ul>
+      </div>
+
+
+    <div class="aboutus" id="About_me">
+        <h1>About Me</h1>
+        <div>
+          <p>Omar is 20 years of Age. Born and raised in Marrakech but originally from eastern Sahara.
+            I'm really into coding. It's been my passion for a few years now, ever since I discovered how much I could create and build with just a few lines of code. I love the feeling of solving a tricky problem or making something that looks cool and works smoothly.
+            I'm mostly self-taught, but I've also taken a few online courses and attended some coding events in Marrakech to learn from other developers. My favorite languages are HTML, CSS, and JavaScript, and I'm always eager to try new frameworks or tools to make my projects more efficient and user-friendly.
+          </p>
+          <img src="Smtg.jpg" class="imageAboutPage" alt="">
+        </div>
+      </div>
+    <br>
+    <br>
+    <br>
+
+
+
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Skills</h1>
+            <table class="servicesTable">
+                <tr>
+                    <td>
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class="fas servicesIcon fa-clock"></i>
+                                <h4 class="card-title mt-3">Website Development</h4>
+                                <p class="card-text mt-3">Through the use of HTML, I can create a website that is responsive and user-friendly.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-layer-group'></i>
+                                <h4 class="card-title mt-3">Website Design</h4>
+                                <p class="card-text mt-3">Through the use of CSS, I can create a website that is stylish and appealing to the eye.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='far servicesIcon fa-check-circle'></i>
+                                <h4 class="card-title mt-3">GoLang</h4>
+                                <p class="card-text mt-3">I can also use GoLang to create a website that is fast and efficient in its use of resources.</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="card servicesText">
+                            <div class="card-body">
+                                <i class='fas servicesIcon fa-search'></i>
+                                <h4 class="card-title mt-3">SQL</h4>
+                                <p class="card-text mt-3">I can also use SQL to create a database that is efficient and easy to understand.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="LogOUt.html" method="post" onsubmit="return validateForm()">
+          <label for="firstname">First Name:</label>
+          <input type="text" id="firstname" name="firstname" required>
+      
+          <label for="lastname">Last Name:</label>
+          <input type="text" id="lastname" name="lastname" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+      
+          <input type="submit" value="Submit" href="LogOUt.html">
+        </form>
+      </div>
+
+
+
+    
+    <div class="contactus" >
+        <h1 id="Contact_me">Contact Me</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <div style="max-width:100%;overflow:hidden;color:red;width:200px;height:200px;"><div id="embed-ded-map-canvas" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=EMSI,+Route+de+Safi,+Marrakesh,+Morocco&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="google-map-html" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-map-data">premium bootstrap themes</a><style>#embed-ded-map-canvas img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style></div>
+                </td>
+                <td>
+                    <a href="https://www.instagram.com/omar__.lt/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" height="30px" width="30px"></a>
+                </td>
+                <td>
+                    <a href="https://www.facebook.com/omar.lidalt.5/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/2048px-Facebook_icon.svg.png"  height="30px" width="30px"></a>
+                </td>
+                <td>
+                    <a href="https://wa.me/+212612734159" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" height="30px" width="30px" ></a>
+                </td>
+                <td>
+                    <a href="https://github.com/OmarStarlord" target="_blank"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" height="30px" width="30px" ></a> 
+                </td>
+            </tr>x
+        </table>
+         
+</div>
+    
+</body>    
+</html>

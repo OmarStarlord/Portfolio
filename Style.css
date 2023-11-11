@@ -1,0 +1,149 @@
+.top-bar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .top-bar li {
+    margin-left: 20px;
+  }
+  
+  
+  .top-bar a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .top-bar a:hover {
+    color: #ff4d4d;
+  }
+  
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .aboutus h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .aboutus > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+  }
+  
+  .aboutus p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-right: 50px;
+    text-align: justify;
+  }
+  
+  .aboutus img {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 50px;
+    margin-top: 50px;
+  }
+  
+  .contactus{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    font-family: Arial, sans-serif;
+  }
+
+  .servicesText.card {
+    height: 100px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+  
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  text-align: center;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+.servicesTable {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 25px;
+}
+
+.servicesTable td {
+  padding: 25px;
+  border: 1px solid black;
+}
